@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json());
 app.use(jwtCheck);
 
-// Importamos el Router de Libros
+// Importamos el Router de Libros.
 const librosRouter = require('./routes/libros');
 
 app.use('/libros', librosRouter);
