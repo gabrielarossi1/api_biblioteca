@@ -117,6 +117,7 @@ router.post("/", requiredScopes("write:libros"), async (req, res) => {
         res.status(500).json({ error: "Error al crear el Libro" });
     }
 });
+
 // Ruta para actualizar un Libro existente
 router.put("/:id", requiredScopes("write:libros"), async (req, res) => {
     try {
